@@ -1,20 +1,119 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: auto;
-    background-color: antiquewhite;
-    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #104d52;
 }
 
-header {
+h1 {
+    background-color: #3e363f;
+    color: #90EE90;
+    text-align: center;
+    padding: 10px;
+    font-size: 3em;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+h2 {
+    font-size: 2em;
+    margin-left: 20px;
+    color: #90EE90;
+}
+
+h5 {
+    color: #90EE90;
+}
+
+ul {
+    background-color: #3e363f;
+    margin-block-start: 0%;
+}
+
+.card {
+    background-color: #90EE90;
+}
+
+.main-outer-div {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    padding: .5em;
-    background-color: #150622;
-    color: #e5eaf5;
+    height: 150vh;
+}
+
+.main-area-div {
+    margin: 10px;
+    height: 70vh;
+}
+
+.forecast-day {
+    height: 310px;
+    width: auto;
+    border: 1px solid grey;
+    margin: 5px;
+    background-color: #3e363f;
+    color: #3e363f;
+}
+
+.forecast-day h3,
+.forecast-day p {
+    margin-left: 10px;
+    background-color: #3e363f;
+}
+
+#card {
+    background-color: #90EE90;
+}
+
+#city-search-area {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#city-search-area input,
+#city-search-area button {
+    margin: 10px;
+    width: 100%;
+    height: 40px;
+    font-size: 1.3em;
+    border-radius: 5px;
+}
+
+#city-search-button {
+    background-color: gray;
+}
+
+#weather-area {
+    width: 70%;
+}
+
+#city-area {
+    height: auto;
+    width: auto;
+    border: 1px solid grey;
+}
+
+#city-area p {
+    margin-left: 20px;
+    font-size: 1.3em;
+}
+
+#five-day-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 480px) {
+    #five-day-container {
+        flex-direction: column;
+    }
+
+    #city-search-area button {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #five-day-container {
+        flex-direction: column;
+    }
 }

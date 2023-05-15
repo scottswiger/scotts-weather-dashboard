@@ -1,12 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Assets/style.css">
+    <title>Scotts-Weather-Dashboard</title>
 </head>
+
 <body>
+
+    <header>
+        <h1>Scott's Weather Dashboard</h1>
+    </header>
+
+    <section id="city-area">
+        <section id="cities">
+            <h2>Search for a city below to see weather forecast: </h2>
+            <form class="form-inline">
+                <label class="sr-only" for="inlineFormInputName2">Name</label>
+                <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2"
+                    placeholder="City Name">
+                <button id="searchButton" type="submit" class="btn btn-primary mb-2">Search</button>
+            </form>
+            <div>
+                <h5>Search History: </h5>
+                <ul id="history" class="list-grouplist-group-flush">
+                </ul>
+            </div>
+        </section>
+
+        <section id="city-stats">
+            <div id="city-card" class="card" style="width: 54rem;">
+                <div class="card-header">
+                    <span id="nameOfCity"></span>
+                    <span id="date"></span>
+                </div>
+                <ul class="list-grouplist-group-flush">
+                    <li id="weatherIcon" class="list-group-item"></li>
+                    <li id="conditions" class="list-group-item"></li>
+                    <li id="temp" class="list-group-item"></li>
+                    <li id="wind" class="list-group-item"></li>
+                    <li id="humidity" class="list-group-item"></li>
+                </ul>
+            </div>
+        </section>
+    </section>
+
+    <section id="forecast">
+        <div class="card cardF">
+            <div id="date-1"></div>
+            <i id="icon-1"></i>
+            <div id="max-1"></div>
+            <div id="min-1"></div>
+            <div id="wind-1"></div>
+            <div id="humidity-1"></div>
+        </div>
+        <div class="card cardF">
+            <div id="date-2"></div>
+            <i id="icon-2"></i>
+            <div id="max-2"></div>
+            <div id="min-2"></div>
+            <div id="wind-2"></div>
+            <div id="humidity-2"></div>
+        </div>
+        <div class="card cardF">
+            <div id="date-3"></div>
+            <i id="icon-3"></i>
+            <div id="max-3"></div>
+            <div id="min-3"></div>
+            <div id="wind-3"></div>
+            <div id="humidity-3"></div>
+        </div>
+        <div class="card cardF">
+            <div id="date-4"></div>
+            <i id="icon-4"></i>
+            <div id="max-4"></div>
+            <div id="min-4"></div>
+            <div id="wind-4"></div>
+            <div id="humidity-4"></div>
+        </div>
+        <div class="card cardF">
+            <div id="date-5"></div>
+            <i id="icon-5"></i>
+            <div id="max-5"></div>
+            <div id="min-5"></div>
+            <div id="wind-5"></div>
+            <div id="humidity-5"></div>
+        </div>
+
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./Assets/script.js"></script>
     
 </body>
+
 </html>
